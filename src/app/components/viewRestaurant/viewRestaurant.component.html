@@ -1,0 +1,55 @@
+<head>
+	<link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+</head>
+<!-- <button routerLink="edit">Edit Restaurant</button>
+
+	<button>Delete</button> -->
+<div class="col-sm-12">
+            <div class="row">
+    <div class="col-sm-12">
+    	<form role="form">
+      <h2 class="title">Foodox.<small>It's always easy <i class="fa fa-edit" title="Edit Restaurant" [routerLink]="['edit/' + list.id]"></i></small></h2>
+	  
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+              <input type="text" disabled name="name" class="form-control input-lg" placeholder="Restaurant Name" tabindex="1" [(ngModel)]="list.name">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="text" disabled name="address" class="form-control input-lg" placeholder="Restaurant Address" tabindex="2" [(ngModel)]="list.address">
+					</div>
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="text" disabled name="c_type" class="form-control input-lg" placeholder="Cuisine Type" tabindex="5" [(ngModel)]="list.cuisine_type">
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="text" disabled name="c_no" class="form-control input-lg" placeholder="Contact no" tabindex="6" [(ngModel)]="list.contact" >
+					</div>
+				</div>
+			</div>
+			
+			<!-- <div class="row">
+				<div class="col-xs-12 col-md-6"></div>
+				<div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Save</a></div>
+			</div> -->
+		</form>
+		
+	</div>
+</div>
+
+<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+<router-outlet></router-outlet>
+</div>

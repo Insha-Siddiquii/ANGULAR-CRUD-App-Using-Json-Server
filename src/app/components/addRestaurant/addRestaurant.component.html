@@ -1,0 +1,77 @@
+<div class="col-sm-12">
+  <div class="row">
+     <div class="col-sm-12">
+        <form role="form">
+           <h2 class="title">Add Restaurant</h2>
+           
+           
+           <hr class="colorgraph">
+           <div name="addRestForm">
+               <div class="row">
+                     <div class="col-xs-12  col-md-6">
+                        <div class="form-group">
+                           <input type="text" class="form-control" name="name"  placeholder="Restaurant Name"  [(ngModel)]="list.name">
+                        </div>
+                     </div>
+                     <div class="col-xs-12  col-md-6">
+                        <div class="form-group">
+                           <input type="text" class="form-control" name="address"  #address=ngModel  placeholder="Restaurant Address"  [(ngModel)]="list.address">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-12  col-md-6">
+                        <div class="form-group ">
+                           <input type="text" class="form-control" name="neighborhood" #neighborhood=ngModel  placeholder="Restaurant Nearby Location"  [(ngModel)]="list.neighborhood">
+                        </div>
+                     </div>
+                     <div class="col-xs-12  col-md-6">
+                        <div class="form-group">
+                           <input type="tel" class="form-control" name="contact"  #contact=ngModel  placeholder="Contact no"  [(ngModel)]="list.contact" >
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                   <div class="col-xs-12  col-md-6">
+                      <div class="form-group">
+                         <input type="text" class="form-control" name="cuisine_type" #cuisine_type=ngModel  placeholder="Cuisine Type"  [(ngModel)]="list.cuisine_type">
+                      </div>
+                   </div>
+                   <div class="col-xs-12  col-md-6">
+                      <div class="form-group">
+                         <input type="text" class="form-control" name="lat" #lat=ngModel  placeholder="Add Latitude"  [(ngModel)]="list.latlng.lat" >
+                      </div>
+                   </div>
+                </div>
+                <div class="row">
+                 <div class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                       <input type="text" class="form-control"  name="lng" #lng=ngModel  placeholder="Add Longitude"  [(ngModel)]="list.latlng.lng">
+                    </div>
+                 </div>
+                 <div class="col-xs-12 col-md-6">
+                  <div class="form-group">
+                     <input type="url" class="form-control"  name="photograph" #photograph=ngModel  placeholder="Add Restaurant Image Url"  [(ngModel)]="list.photograph">
+                  </div>
+               </div>
+                 
+               </div>
+              
+                  <button (click)="saveList(list)" class="btn_right btn btn-success btn-lg">Save</button>
+    
+    
+
+           </div>
+         
+          
+         
+       
+         <!-- <div class="row">
+               <div class="col-xs-12 col-md-6"></div>
+              <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success  btn-lg">Save</a></div>
+              </div>  -->
+        </form>
+     </div>
+  </div>
+ 
+</div>

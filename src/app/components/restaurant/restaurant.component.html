@@ -1,0 +1,27 @@
+<!-- <div class="cards"   >
+      <div class="card" *ngFor ="let rest of list">
+                  <img src="{{rest.photograph}}" alt="Broken Image" class="img-responsive" style="width:100%">
+                  <h1 class="card-content">{{rest.name }}</h1>
+                  <p class="price">Cuisine {{rest.cuisine_type}}</p>
+                  <p >{{rest.address}}</p>
+                  <button>View More</button>
+      </div>
+ </div>
+     -->
+     <div class="row cards">
+        <div class="small-3 panel columns card" *ngFor ="let rest of list">
+          <img src="{{rest.photograph}}" alt="Broken Image" class="img-responsive" style="width:100%">
+          <h1>{{rest.name }}</h1>
+          <p class="type">Cuisine {{rest.cuisine_type}}</p>
+          <p >{{rest.address}}</p>
+          <div class="button" (click)="onViewMore(rest.id)">View More</div>
+        </div>
+        
+        
+      </div>
+ 
+
+
+
+
+
