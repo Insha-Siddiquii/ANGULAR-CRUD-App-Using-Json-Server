@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDDBvhaoFagwpE5oNugKK16KA_Q0cjBaCU'
+      apiKey: 'YOUR-API-KEY-FOR-GOOGLE-MAPS'
     })
   ]
 
