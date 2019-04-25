@@ -1,0 +1,2 @@
+# Angular-CRUD-App-Using-Json-Server
+This application is performing basic CRUD (create read update delete) operations using Json-Server. Application is implemented on angular , containing local db.json that can be access through Json-Server. An additional feature in this application is the usage of Google maps for location. To configure and use Google maps you must use Google console developer in order to get the API-Key for accessing Google maps in this application.
